@@ -18,3 +18,8 @@ Git es un software de control de versiones diseñado por ___Linus Torvalds___, p
 -     git add .
 7. git commit 
 -     git commit -m "Nombre del commit"
+-     git commit -am "Solo para archivos modificados"
+-     git commit --amend (modifica el nombre del commit)
+8. git log 
+9. git checkout 
+-     git checkout nombre del archivo (Cambia de rama o restaura archivos del árbol de trabajo)
