@@ -15,11 +15,11 @@ Obtiene y configura el repositorio o las opciones globales.
 
 ## Iniciando un proyecto
 Los 3 estados de Git
-![Los estados de git](https://i.ibb.co/HhBsyqf/los-estados-de-git.png)
 #### 4. git init
 Crea un repositorio de Git o rehinicia uno.
 #### 5. git status
 Muestra el estado del árbol de trabajo.
+![Los estados de git](https://i.ibb.co/HhBsyqf/los-estados-de-git.png)
 #### 6. git add 
 Agrega el contenido del archivo al indice.
 -     git add .
@@ -30,6 +30,7 @@ Registra los cambios en el repositorio.
 -     git commit --amend (modifica el nombre del commit)
 #### 8. git log
 Muestran los registros de confirmación. 
+![master](https://i.ibb.co/q1GBvC8/log-de-commit.png)
 #### 9. git checkout 
 Cambia de rama o restaura archivos de árbol de trabajo.
 -     git checkout nombre del archivo (Cambia de rama o restaura archivos del árbol de trabajo)
