@@ -14,6 +14,8 @@ Obtiene y configura el repositorio o las opciones globales.
 -     git config --global -e
 
 ## Iniciando un proyecto
+Los 3 estados de Git
+![Los estados de git](https://i.ibb.co/HhBsyqf/los-estados-de-git.png)
 #### 4. git init
 Crea un repositorio de Git o rehinicia uno.
 #### 5. git status
