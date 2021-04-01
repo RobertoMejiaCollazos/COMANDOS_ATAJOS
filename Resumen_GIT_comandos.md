@@ -38,6 +38,8 @@ Muestran los registros de confirmación.
 -     git log --oneline (vista resumida)
 -     git log --oneline -n 5 (vista personalizada)
 -     git log --oneline --all (visualiza todas las ramas)
+-     git log --oneline --all --graph
+-     git log --oneline --all --graph --decorate (muestra las ramas de forma gráfica)
 #### 9. git checkout 
 Cambia de rama o restaura archivos de árbol de trabajo.
 -     git checkout NombreArchivo (restaura archivo)
