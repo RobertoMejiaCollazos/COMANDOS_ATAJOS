@@ -50,4 +50,4 @@ Cambia de rama o restaura archivos de árbol de trabajo.
 #### 12. git switch
 Cambia de rama al igual que "git checkout -b nombre de rama".
 #### 13. git branch
-Enumera, crea o elimina ramas.
+Enumera, crea o elimina ramas..
