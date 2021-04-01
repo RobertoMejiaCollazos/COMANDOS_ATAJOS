@@ -22,20 +22,32 @@ Muestra el estado del árbol de trabajo.
 ![Los estados de git](https://i.ibb.co/HhBsyqf/los-estados-de-git.png)
 #### 6. git add 
 Agrega el contenido del archivo al indice.
--     git add .
+-     git add . (Agrega todos los cambios)
 #### 7. git commit
 Registra los cambios en el repositorio. 
--     git commit -m "Nombre del commit"
--     git commit -am "Solo para archivos modificados"
+-     git commit -m "Nombre del commit" (Creando commit)
+-     git commit -am "Nombre del commit" (Creando commit solo para archivos modificados)
 -     git commit --amend (modifica el nombre del commit)
 #### 8. git log
-Muestran los registros de confirmación. 
+Muestran los registros de confirmación.
+
+##### Ramas
 ![master](https://i.ibb.co/q1GBvC8/log-de-commit.png)
+![Ramas](https://i.ibb.co/sWtjDx8/2021-03-31-17-31-55-3-3-Ramas-locales-mp4-Reproductor-multimedia-VLC.png)
+
+-     git log --oneline (vista resumida)
+-     git log --oneline -n 5 (vista personalizada)
+-     git log --oneline --all (visualiza todas las ramas)
 #### 9. git checkout 
 Cambia de rama o restaura archivos de árbol de trabajo.
--     git checkout nombre del archivo (Cambia de rama o restaura archivos del árbol de trabajo)
+-     git checkout NombreArchivo (restaura archivo)
 -     git checkout -f (todos los cambios se resetean)
-10. git restore
--     git restore --staget "nombre del archivo sin comillas"
-11. git diff
--     git diff --stat ()
+-     git checkout -b NombreRama ("b" de branch o rama)
+#### 10. git restore
+-     git restore --staget nombre del archivo
+#### 11. git diff
+-     git diff --stat NombreArchivo (muestra estadistica de cambios)
+#### 12. git switch
+Cambia de rama al igual que "git checkout -b nombre de rama".
+#### 13. git branch
+Enumera, crea o elimina ramas.
