@@ -43,7 +43,7 @@ Muestran los registros de confirmación.
 Cambia de rama o restaura archivos de árbol de trabajo.
 -     git checkout NombreArchivo (restaura archivo)
 -     git checkout -f (todos los cambios se resetean)
--     git checkout -b NombreRama ("b" de branch o rama)
+-     git checkout -b CreaNombreRama ("b" de branch o rama)
 #### 10. git restore
 -     git restore --staget nombre del archivo
 #### 11. git diff
@@ -52,6 +52,27 @@ Cambia de rama o restaura archivos de árbol de trabajo.
 Cambia de rama al igual que "git checkout -b nombre de rama".
 #### 13. git branch
 Enumera, crea o elimina ramas.
+-     git branch (ver todas las ramas)
 -     git branch -D nombre de rama (elimina la rama)
 #### 14. git merge 
 Une dos o más historias de desarrollo juntas.
+-     git merge NombreDeRama
+#### 15. git clone
+-     git clone URL
+Clona un repositorio en un nuevo directorio.
+#### 16. remote
+Administra un conjunto de repositorios rastreados 
+-     git remote -v (origin y rama)
+#### 16. git push
+Actualiza las referencias remotas junto con los objetos asociados.
+-     git push origin master (nombre de rama)
+-     git push --delete origin rama (elimina rama de github)
+#### 17. git fetch  
+Descarga objetos y referencias de otro repositorio
+#### 18. git pull
+Obtenga e integre con otro repositorio o una sucursal local
+-     git pull origin master (nombre de rama) 
+
+## Ignorar archivos
+Crear archivo ".gitignore" dentro colocar la rutas de los archivos a ignorar y se puedo comentar con "# comentario".
+-     carpeta/ignorar.txt (ruta) 
