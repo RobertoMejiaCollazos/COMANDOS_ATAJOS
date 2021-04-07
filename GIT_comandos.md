@@ -18,10 +18,15 @@ Los 3 estados de Git
 Crea un repositorio de Git o rehinicia uno.
 #### 5. git status
 Muestra el estado del árbol de trabajo.
+-     git status -s ("s" de silent o silencioso)
+-     git status -s -b ("silent" y "branch")
 ![Los estados de git](https://i.ibb.co/HhBsyqf/los-estados-de-git.png)
 #### 6. git add 
 Agrega el contenido del archivo al indice.
 -     git add . (Agrega todos los cambios)
+-     git add --all (Agrega todos los cambios)
+-     git add -A (Agrega todos los cambios)
+![Comandos git add](https://i.ibb.co/HCm5grR/git-add.png)
 #### 7. git commit
 Registra los cambios en el repositorio. 
 -     git commit -m "Nombre del commit" (Creando commit)
