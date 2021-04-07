@@ -10,17 +10,21 @@ Git es un software de control de versiones diseñado por ___Linus Torvalds___, p
 Obtiene y configura el repositorio o las opciones globales.
 -     git config --global user.name "usuario"
 -     git config --global user.email "correo"
--     git config --global -e
-
+-     git config --global -e (registro editable)
+## Alias
+-     git config --global alias.atajo"comando"
+-     git config --global -e (registro de alias editable)
+-     git config --global -l (lista de alias)
 ## Iniciando un proyecto
 Los 3 estados de Git
+![Los estados de git](https://i.ibb.co/HhBsyqf/los-estados-de-git.png)
 #### 4. git init
-Crea un repositorio de Git o rehinicia uno.
+Crea un repositorio de Git o rehinicia uno. (Se crea la rama master).
+![Git init](https://i.ibb.co/mvG0rbB/git-init.png)
 #### 5. git status
 Muestra el estado del árbol de trabajo.
 -     git status -s ("s" de silent o silencioso)
 -     git status -s -b ("silent" y "branch")
-![Los estados de git](https://i.ibb.co/HhBsyqf/los-estados-de-git.png)
 #### 6. git add 
 Agrega el contenido del archivo al indice.
 -     git add . (Agrega todos los cambios)
@@ -50,8 +54,10 @@ Cambia de rama o restaura archivos de árbol de trabajo.
 -     git checkout -f (todos los cambios se resetean)
 -     git checkout -b CreaNombreRama ("b" de branch o rama)
 #### 10. git restore
+Restaurar archivos de árbol de trabajo
 -     git restore --staget nombre del archivo
 #### 11. git diff
+Muestra los cambios entre confirmaciones, confirmaciones y árbol de trabajo, etc.
 -     git diff --stat NombreArchivo (muestra estadistica de cambios)
 #### 12. git switch
 Cambia de rama al igual que "git checkout -b nombre de rama".
