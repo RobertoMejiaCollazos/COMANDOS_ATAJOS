@@ -83,7 +83,9 @@ git log --oneline --all --graph --decorate (muestra gráfica)
 #### 9. git checkout 
 ___Cambia de rama o restaura___ archivos de árbol de trabajo.
 
-##### Crea
+##### Crea Rama
+![rama2](https://i.ibb.co/bRFpsdq/rama.png)
+
 ~~~
 git checkout -b CreaNombreRama ("b" de branch o rama)
 ~~~
@@ -96,14 +98,21 @@ git checkout -f (restaura todos los cambios)
 git checkout master (restaura a ultimo commit)
 ~~~
 
-#### 10.git reset
+#### 10. git reset
 ___Restablece HEAD___ actual al estado especificado.
 
 ~~~
 git reset NombreArchivo (excluye archivo)
-git reset HEAD NombreArchivo
-git reset --soft NumeroCommit
-git reset --soft HEADˆ (desacer commits)
+git reset HEAD NombreArchivo (deshace cambios en el archivo)
+git reset --soft NumeroCommit (deshace commit)
+git reset --soft HEADˆ (deshace ultimo commit)
+git reset --hard NumeroCommit (deshace el commit y borra lo ultimo)
+~~~
+
+#### 11. git reflog 
+Mantiene un registro de todo lo que se hace. Te salva la vida.
+~~~
+git reflog (Mantiene un registro de todo)
 ~~~
 
 #### 11. git restore
@@ -134,6 +143,16 @@ git branch -D NombrRama (elimina la rama)
 
 #### 15. git merge 
 ___Une dos o más historias___ de desarrollo juntas.
+
+##### Merge forward
+
+![](https://i.ibb.co/T1J2qg5/fast-forward.png)
+
+##### Merge Automática
+![](https://i.ibb.co/vQmpRQF/automatica.png)
+
+##### Merge Manual
+![](https://i.ibb.co/G3GYFVP/manual.png)
 
 ~~~
 git merge NombreDeRama (une ramas)
