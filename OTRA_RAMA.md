@@ -1,3 +1,0 @@
-#### DEVELOPMENT
-#### MASTER
-#### MASTER

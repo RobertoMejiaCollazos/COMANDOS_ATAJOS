@@ -83,11 +83,12 @@ git log --oneline --all --graph --decorate (muestra gráfica)
 #### 9. git checkout 
 ___Cambia de rama o restaura___ archivos de árbol de trabajo.
 
-##### Crea Rama
 ![rama2](https://i.ibb.co/bRFpsdq/rama.png)
 
+##### Crea Rama
+
 ~~~
-git checkout -b CreaNombreRama ("b" de branch o rama)
+git checkout -b Crea_Rama_y_se_Traslada (como git branch Nombre)
 ~~~
 ##### Restaura
 ~~~
@@ -96,6 +97,12 @@ git checkout NombreArchivo (restaura archivo con el nombre)
 git checkout numeroCommit (restaura archivo con el numero de commit)
 git checkout -f (restaura todos los cambios) 
 git checkout master (restaura a ultimo commit)
+~~~
+
+##### Cambiar de Rama
+~~~
+git checkout master (se mueve a rama master)
+git checkout NombreRama (se mueve de rama)
 ~~~
 
 #### 10. git reset
@@ -115,14 +122,14 @@ Mantiene un registro de todo lo que se hace. Te salva la vida.
 git reflog (Mantiene un registro de todo)
 ~~~
 
-#### 11. git restore
+#### 12. git restore
 ___Restaura___ archivos de árbol de trabajo.
 
 ~~~
 git restore --staget NombreArchivo
 ~~~
 
-#### 12. git diff
+#### 13. git diff
 ___Muestra los cambios entre confirmaciones___, confirmaciones y árbol de trabajo, etc.
 
 ~~~
@@ -130,19 +137,29 @@ git diff --stat NombreArchivo (muestra estadistica de cambios)
 git diff --staged (verifica archivos en staged)
 ~~~
 
-#### 13. git switch
+#### 14. git switch
 ___Cambia de rama___ al igual que "git checkout -b nombre de rama".
 
-#### 14. git branch
+~~~
+git switch NombreRama (Cambia de rama)
+~~~
+
+#### 15. git branch
 Enumera, crea o elimina ramas.
 
 ~~~
 git branch (ver todas las ramas)
-git branch -D NombrRama (elimina la rama)
+git branch NombreRama (crea rama)
+git branch -D NombreRama (elimina rama)
+git branch -d NombreRama (elimina rama)
 ~~~
 
-#### 15. git merge 
+#### 16. git merge 
 ___Une dos o más historias___ de desarrollo juntas.
+
+~~~
+git merge NombreDeRama (une ramas)
+~~~
 
 ##### Merge forward
 
@@ -154,24 +171,21 @@ ___Une dos o más historias___ de desarrollo juntas.
 ##### Merge Manual
 ![](https://i.ibb.co/G3GYFVP/manual.png)
 
-~~~
-git merge NombreDeRama (une ramas)
-~~~
 
-#### 16. git clone
+#### 17. git clone
 ___Clona un repositorio___ en un nuevo directorio.
 
 ~~~
 git clone URL (descarga copia)
 ~~~
 
-#### 17. remote
+#### 18. remote
 Administra un conjunto de repositorios rastreados 
 
 ~~~
 git remote -v (origin y rama)
 ~~~
-#### 18. git push
+#### 19. git push
 ___Actualiza___ las referencias remotas junto con los objetos asociados.
 
 ~~~
@@ -179,17 +193,27 @@ git push origin master (nombre de rama)
 git push --delete origin rama (elimina rama de github)
 ~~~
 
-#### 19. git fetch  
+#### 20. git fetch  
 Descarga objetos y referencias de otro repositorio.
 ~~~
 git fetch 
 ~~~
 
-#### 20. git pull
+#### 21. git pull
 ___Obtenga e integre___ con otro repositorio o una sucursal ___local___
 
 ~~~
 git pull origin master (nombre de rama) 
+~~~
+
+#### 22. git tag
+Crea, enumera, elimina o verifica un objeto de etiqueta firmado con GPG
+
+~~~
+git tag NombreTag (crea tag)
+git tag -a VersionTag #commit -m "NombreTag" (crea tag desde commit) 
+git tag (ver tags) 
+git tag -d NombreTag (eliminar tag)
 ~~~
 
 ## Ignorar archivos
