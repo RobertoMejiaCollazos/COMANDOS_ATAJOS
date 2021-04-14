@@ -29,10 +29,12 @@ git config --global -l (lista de alias)
 ## Iniciando un proyecto
 
 Los 3 estados de Git
-![Los estados de git](https://i.ibb.co/HhBsyqf/los-estados-de-git.png)
+
+![](https://i.ibb.co/HhBsyqf/los-estados-de-git.png)
 
 #### 4. git init
 Crea un repositorio de Git o reinicia uno (se crea la rama master). 
+
 ![Git init](https://i.ibb.co/mvG0rbB/git-init.png)
 
 #### 5. git status
@@ -55,8 +57,12 @@ git add -A (Agrega todos los cambios)
 
 ![Comandos git add](https://i.ibb.co/HCm5grR/git-add.png)
 
+
+## Trabajando con ramas 
 #### 7. git commit
 ___Registra___ los cambios en el repositorio.
+
+![rama2](https://i.ibb.co/bRFpsdq/rama.png)
 
 ~~~ 
 git commit -m "NombreCommit" (registra commit)
@@ -64,11 +70,9 @@ git commit -am "NombreCommit" (registra solo modificados)
 git commit --amend (Registro de commit)
 git commit --amend -m "NombreCommit" (Renombrar)
 ~~~
-
 #### 8. git log
 Muestran los ___registros de confirmación___.
 
-##### Ramas
 
 ![master](https://i.ibb.co/q1GBvC8/log-de-commit.png)
 ![Ramas](https://i.ibb.co/sWtjDx8/2021-03-31-17-31-55-3-3-Ramas-locales-mp4-Reproductor-multimedia-VLC.png)
@@ -79,11 +83,9 @@ git log --oneline -n 5 (muestra vista 5 ultimos)
 git log --oneline --all (muestra todas las ramas)
 git log --oneline --all --graph --decorate (muestra gráfica)
 ~~~
-
 #### 9. git checkout 
 ___Cambia de rama o restaura___ archivos de árbol de trabajo.
 
-![rama2](https://i.ibb.co/bRFpsdq/rama.png)
 
 ##### Crea Rama
 
