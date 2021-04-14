@@ -149,7 +149,6 @@ Enumera, crea o elimina ramas.
 
 ~~~
 git branch (ver todas las ramas)
-git branch NombreRama (crea rama)
 git branch -D NombreRama (elimina rama)
 git branch -d NombreRama (elimina rama)
 ~~~
@@ -172,41 +171,7 @@ git merge NombreDeRama (une ramas)
 ![](https://i.ibb.co/G3GYFVP/manual.png)
 
 
-#### 17. git clone
-___Clona un repositorio___ en un nuevo directorio.
-
-~~~
-git clone URL (descarga copia)
-~~~
-
-#### 18. remote
-Administra un conjunto de repositorios rastreados 
-
-~~~
-git remote -v (origin y rama)
-~~~
-#### 19. git push
-___Actualiza___ las referencias remotas junto con los objetos asociados.
-
-~~~
-git push origin master (nombre de rama)
-git push --delete origin rama (elimina rama de github)
-~~~
-
-#### 20. git fetch  
-Descarga objetos y referencias de otro repositorio.
-~~~
-git fetch 
-~~~
-
-#### 21. git pull
-___Obtenga e integre___ con otro repositorio o una sucursal ___local___
-
-~~~
-git pull origin master (nombre de rama) 
-~~~
-
-#### 22. git tag
+#### 17. git tag
 Crea, enumera, elimina o verifica un objeto de etiqueta firmado con GPG
 
 ~~~
