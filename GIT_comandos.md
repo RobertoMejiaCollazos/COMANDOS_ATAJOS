@@ -50,6 +50,7 @@ git status -sb (igual "-s -b")
 ___Agrega___ el contenido del archivo al indice.
 
 ~~~
+git add NombreArchivo (Agrega archivo)
 git add . (Agrega todos los cambios)
 git add --all (Agrega todos los cambios)
 git add -A (Agrega todos los cambios)
