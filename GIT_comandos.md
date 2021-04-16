@@ -26,14 +26,22 @@ git config --global -e (registro editable)
 git config --global -l (lista de alias)
 ~~~
 
+##### Configuraciones
+
+~~~
+git config --list (muestra las configuraciones de git)
+~~~
+
+
 ## Iniciando un proyecto
 
-Los 3 estados de Git
-
-![](https://i.ibb.co/HhBsyqf/los-estados-de-git.png)
 
 #### 4. git init
 Crea un repositorio de Git o reinicia uno (se crea la rama master). 
+
+~~~
+git init (crea el directorio .git)
+~~~
 
 ![Git init](https://i.ibb.co/mvG0rbB/git-init.png)
 
@@ -41,29 +49,34 @@ Crea un repositorio de Git o reinicia uno (se crea la rama master).
 Muestra el ___estado___ del árbol de trabajo.
 
 ~~~
+git status (estado de los archivos)
 git status -s ("s" de silent o silencioso)
 git status -s -b ("silent" y "branch")
 git status -sb (igual "-s -b")
 ~~~
 
+## Los 3 estados de Git
+
+1. Espacio de trabajo
+2. Area de preparación
+3. Repositorio (carpeta .git)
+
+![](https://i.ibb.co/16LXjLM/3estados.png)
+
 #### 6. git add 
 ___Agrega___ el contenido del archivo al indice.
 
 ~~~
+git add . (Manda todo a "staging area")
+git add -A (Manda todo a "staging area")
+git add --all (Manda todo a "staging area")
 git add NombreArchivo (Agrega archivo)
-git add . (Agrega todos los cambios)
-git add --all (Agrega todos los cambios)
-git add -A (Agrega todos los cambios)
 ~~~
 
 ![Comandos git add](https://i.ibb.co/HCm5grR/git-add.png)
 
-
-## Trabajando con ramas 
 #### 7. git commit
 ___Registra___ los cambios en el repositorio.
-
-![rama2](https://i.ibb.co/bRFpsdq/rama.png)
 
 ~~~ 
 git commit -m "NombreCommit" (registra commit)
@@ -71,7 +84,17 @@ git commit -am "NombreCommit" (registra solo modificados)
 git commit --amend (Registro de commit)
 git commit --amend -m "NombreCommit" (Renombrar)
 ~~~
-#### 8. git log
+
+#### 8. git rm
+Elimina archivos del árbol de trabajo y del índice
+
+~~~
+git rm --cached NombreArchivo (Elimina archivo del indice) 
+~~~
+
+## Trabajando con ramas 
+
+#### 9. git log
 Muestran los ___registros de confirmación___.
 
 
@@ -79,12 +102,13 @@ Muestran los ___registros de confirmación___.
 ![Ramas](https://i.ibb.co/sWtjDx8/2021-03-31-17-31-55-3-3-Ramas-locales-mp4-Reproductor-multimedia-VLC.png)
 
 ~~~
+git log (Historial de todos los commits)
 git log --oneline (muestra numero y commit)
 git log --oneline -n 5 (muestra vista 5 ultimos)
 git log --oneline --all (muestra todas las ramas)
 git log --oneline --all --graph --decorate (muestra gráfica)
 ~~~
-#### 9. git checkout 
+#### 10. git checkout 
 ___Cambia de rama o restaura___ archivos de árbol de trabajo.
 
 
@@ -108,7 +132,7 @@ git checkout master (se mueve a rama master)
 git checkout NombreRama (se mueve de rama)
 ~~~
 
-#### 10. git reset
+#### 11. git reset
 ___Restablece HEAD___ actual al estado especificado.
 
 ~~~
@@ -119,32 +143,25 @@ git reset --soft HEADˆ (deshace ultimo commit)
 git reset --hard NumeroCommit (deshace el commit y borra lo ultimo)
 ~~~
 
-#### 11. git reflog 
+#### 12. git reflog 
 Mantiene un registro de todo lo que se hace. Te salva la vida.
 ~~~
 git reflog (Mantiene un registro de todo)
 ~~~
 
-#### 12. git restore
+#### 13. git restore
 ___Restaura___ archivos de árbol de trabajo.
 
 ~~~
 git restore --staget NombreArchivo
 ~~~
 
-#### 13. git diff
+#### 14. git diff
 ___Muestra los cambios entre confirmaciones___, confirmaciones y árbol de trabajo, etc.
 
 ~~~
 git diff --stat NombreArchivo (muestra estadistica de cambios)
 git diff --staged (verifica archivos en staged)
-~~~
-
-#### 14. git switch
-___Cambia de rama___ al igual que "git checkout -b nombre de rama".
-
-~~~
-git switch NombreRama (Cambia de rama)
 ~~~
 
 #### 15. git branch
@@ -156,7 +173,15 @@ git branch -D NombreRama (elimina rama)
 git branch -d NombreRama (elimina rama)
 ~~~
 
-#### 16. git merge 
+#### 16. git switch
+___Cambia de rama___ al igual que "git checkout -b nombre de rama".
+
+~~~
+git switch NombreRama (Cambia de rama)
+~~~
+
+
+#### 17. git merge 
 ___Une dos o más historias___ de desarrollo juntas.
 
 ~~~

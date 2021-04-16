@@ -18,25 +18,31 @@ git clone URL (descarga copia)
 Administra un conjunto de repositorios rastreados 
 
 ~~~
-git remote -v (origin y rama)
+git remote -v (Donde apunta el repositorio)
+ejemplo aparece lo siguiente:
+origin https://github.com/user/repositorio.git (fetch)
+origin https://github.com/user/repositorio.git (push)
 ~~~
 #### 3. git push
 ___Actualiza___ las referencias remotas junto con los objetos asociados.
 
 ~~~
-git push origin master (nombre de rama)
+git push origin master (sube cambios a master de GitHub)
+git push origin NombreRama (sube cambios a rama)
 git push --delete origin rama (elimina rama de github)
+git push -u origin master (próxima vez no necesita especificar rama)
 ~~~
 
 #### 4. git fetch  
 Descarga objetos y referencias de otro repositorio.
 ~~~
-git fetch 
+git fetch origin 
 ~~~
 
 #### 5. git pull
 ___Obtenga e integre___ con otro repositorio o una sucursal ___local___
 
 ~~~
-git pull origin master (nombre de rama) 
+git pull origin master (Integra a local) 
+git pull origin NombreRama (Integra a local)
 ~~~
