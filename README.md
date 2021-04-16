@@ -5,7 +5,6 @@
 git version (ver si esta instalado)
 ~~~
 #### git help 
-Muestra información de ayuda sobre Git.
 ~~~
 git help (Muestra comandos existentes)
 git help NombreComando (Muestra descripción del comando)
@@ -20,13 +19,13 @@ git config global --user.email "Correo del autor"
 git config --list (muestra las configuraciones de git)
 ~~~
 
-## :blue_square: INTERMEDIO
-### :yellow_circle: Iniciando proyecto
-#### git init
-Crea un repositorio de Git o reinicia uno (se crea la rama master). 
 
+
+## :blue_square: INTERMEDIO
+### :large_blue_circle: Iniciando proyecto
+#### git init
 ~~~
-git init (crea el directorio .git)
+git init (Crea un repositorio local (.git) o reinicia uno)
 ~~~
 
 
