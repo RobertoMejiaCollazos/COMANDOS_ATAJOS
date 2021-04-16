@@ -27,7 +27,19 @@ git config --list (muestra las configuraciones de git)
 ~~~
 git init (Crea un repositorio local (.git) o reinicia uno)
 ~~~
+#### git status
+~~~
+git status (Muestra el estado del árbol de trabajo)
+git status -s ("s" de silent o silencioso)
+git status -s -b ("silent" y "branch")
+git status -sb (igual "-s -b")
+~~~
+### :large_blue_circle: Los 3 estados de Git
+1. Espacio de trabajo
+2. Area de preparación
+3. Repositorio (carpeta .git)
 
+![](https://i.ibb.co/16LXjLM/3estados.png)
 
 
 ## :red_square: AVANZADO
