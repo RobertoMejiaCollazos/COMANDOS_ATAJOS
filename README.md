@@ -1,5 +1,5 @@
-## :green_square: BÁSICO
-### :green_circle: Primeros pasos con Git
+## :orange_square: BÁSICO
+### :orange_circle: Primeros pasos con Git
 #### git version
 ~~~
 git version (ver si esta instalado)
@@ -21,8 +21,8 @@ git config --list (muestra las configuraciones de git)
 
 
 
-## :blue_square: INTERMEDIO
-### :large_blue_circle: Iniciando proyecto
+## :yellow_square: INTERMEDIO
+### :yellow_circle: Iniciando proyecto
 #### git init
 ~~~
 git init (Crea un repositorio local (.git) o reinicia uno)
@@ -34,7 +34,7 @@ git status -s ("s" de silent o silencioso)
 git status -s -b ("silent" y "branch")
 git status -sb (igual "-s -b")
 ~~~
-### :large_blue_circle: Los 3 estados de Git
+### :yellow_circle: Los 3 estados de Git
 1. Espacio de trabajo
 2. Area de preparación
 3. Repositorio (carpeta .git)
@@ -67,7 +67,16 @@ git log --oneline -n 5 (muestra vista 5 ultimos)
 git log --oneline --all (muestra todas las ramas)
 git log --oneline --all --graph --decorate (muestra gráfica)
 ~~~
-### :large_blue_circle: Restaura o deshace cambios realizados
+#### git reset
+~~~
+git reset (Restablece HEAD actual al estado especificado)
+git reset NombreArchivo (excluye archivo)
+git reset HEAD NombreArchivo (deshace cambios en el archivo)
+git reset --soft NumeroCommit (deshace commit)
+git reset --soft HEADˆ (deshace ultimo commit)
+git reset --hard NumeroCommit (deshace el commit y borra lo ultimo)
+~~~
+### :yellow_circle: Restaura o deshace cambios realizados
 #### git checkout 
 ~~~
 git checkout (Deshace cambios)
@@ -82,11 +91,11 @@ git checkout master (restaura a ultimo commit)
 ~~~
 git rm --cached NombreArchivo (Elimina archivos del árbol de trabajo y del índice) 
 ~~~
-### :large_blue_circle: Trabajando con ramas
+### :yellow_circle: Trabajando con ramas
 #### git branch
 ~~~
-git branch NuevaRama (Crea rama)
 git branch (ver todas las ramas)
+git branch NuevaRama (Crea rama)
 git branch -D NombreRama (elimina rama)
 git branch -d NombreRama (elimina rama)
 ~~~
@@ -103,24 +112,24 @@ git merge NombreRama (Une la rama master con otra rama)
 ![](https://i.ibb.co/G3GYFVP/manual.png)
 
 
-## :red_square: AVANZADO
-### :red_circle: Personalizar Git
+## :blue_square: AVANZADO
+### :large_blue_circle: Personalizar Git
 ~~~
 ~~~
-### :red_circle: Alias
+### :large_blue_circle: Alias
 ~~~
 git config --global alias.ATAJO "COMANDO"
 git config --global -e (registro editable)
 git config --global -l (lista de alias)
 ~~~
-### :red_circle: Agregar archivos
+### :large_blue_circle: Agregar archivos
 ![](https://i.ibb.co/HCm5grR/git-add.png)
-### :red_circle: Crea Rama
+### :large_blue_circle: Crea Rama
 ~~~
 git branch NombreRama (crea rama)
 git checkout -b  (crea rama y se traslada)
 ~~~
-### :red_circle: Cambiar de Rama
+### :large_blue_circle: Cambiar de Rama
 ~~~
 git switch NombreRama (Cambia de rama)
 git checkout NombreRama (Cambia de rama)
