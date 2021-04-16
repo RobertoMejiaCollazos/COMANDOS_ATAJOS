@@ -57,23 +57,50 @@ git commit -am "NombreCommit" (registra solo modificados)
 git commit --amend (Registro de commit)
 git commit --amend -m "NombreCommit" (Renombrar)
 ~~~
+#### git log
+![](https://i.ibb.co/q1GBvC8/log-de-commit.png)
+![](https://i.ibb.co/sWtjDx8/2021-03-31-17-31-55-3-3-Ramas-locales-mp4-Reproductor-multimedia-VLC.png)
+~~~
+git log (Muestran los registros de commits)
+git log --oneline (muestra numero y commit)
+git log --oneline -n 5 (muestra vista 5 ultimos)
+git log --oneline --all (muestra todas las ramas)
+git log --oneline --all --graph --decorate (muestra gráfica)
+~~~
 ### :large_blue_circle: Restaura o deshace cambios realizados
 #### git checkout 
-##### Restaura
 ~~~
 git checkout (Deshace cambios)
-git checkout NombreArchivo (Deshace archivo con el nombre)
-git checkout numeroCommit (Deshace archivo con el numero de commit)
+git checkout NombreArchivo (Deshace cambios del archivo)
+git checkout carpeta/Archivo (Deshace cambios del archivo)
+git checkout numeroCommit (Deshace cambios del commit)
 git checkout --. (Deshace todos los archivos eliminados)
 git checkout -f (restaura todos los cambios) 
 git checkout master (restaura a ultimo commit)
 ~~~
-
-
 #### git rm
 ~~~
 git rm --cached NombreArchivo (Elimina archivos del árbol de trabajo y del índice) 
 ~~~
+### :large_blue_circle: Trabajando con ramas
+#### git branch
+~~~
+git branch NuevaRama (Crea rama)
+git branch (ver todas las ramas)
+git branch -D NombreRama (elimina rama)
+git branch -d NombreRama (elimina rama)
+~~~
+#### git merge 
+~~~
+git merge (Une dos o más historias de desarrollo juntas)
+git merge NombreRama (Une la rama master con otra rama)
+~~~
+###### Merge forward
+![](https://i.ibb.co/T1J2qg5/fast-forward.png)
+###### Merge Automática
+![](https://i.ibb.co/vQmpRQF/automatica.png)
+###### Merge Manual
+![](https://i.ibb.co/G3GYFVP/manual.png)
 
 
 ## :red_square: AVANZADO
