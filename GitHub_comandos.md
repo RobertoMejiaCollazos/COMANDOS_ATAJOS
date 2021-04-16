@@ -11,7 +11,7 @@ El 4 de junio de 2018 Microsoft compró GitHub por la cantidad de 7500 millones 
 ___Clona un repositorio___ en un nuevo directorio.
 
 ~~~
-git clone URL (descarga copia)
+git clone https://github.com/user/repositorio.git
 ~~~
 
 #### 2. remote

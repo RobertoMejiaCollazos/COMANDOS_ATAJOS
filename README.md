@@ -1,5 +1,5 @@
-# GIT
-### :large_blue_circle: Primeros pasos con Git
+## BÁSICOS
+#### :orange_square: Primeros pasos con Git
 ##### 1. git version
 ~~~
 git version (ver si esta instalado)
@@ -11,7 +11,7 @@ git config global --user.name "Nombre del autor"
 git config global --user.email "Correo del autor"
 ~~~
 
-## Pasos avanzados
+#### :orange_square: Pasos avanzados
 ##### 1. Personalizar Git
 ##### 2. Alias
 ~~~
