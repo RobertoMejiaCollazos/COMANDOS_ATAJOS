@@ -1,5 +1,5 @@
 ## :green_square: BÁSICO
-#### :orange_square: Primeros pasos con Git
+#### :green_circle: Primeros pasos con Git
 ##### 1. git version
 ~~~
 git version (ver si esta instalado)
@@ -14,7 +14,7 @@ git config global --user.email "Correo del autor"
 git config --list (muestra las configuraciones de git)
 ~~~
 
-## :yellow_square: INTERMEDIO
+## :blue_square: INTERMEDIO
 
 
 ## :red_square: AVANZADO
