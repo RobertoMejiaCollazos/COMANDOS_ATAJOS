@@ -76,17 +76,6 @@ git reset --soft NumeroCommit (deshace commit)
 git reset --soft HEADˆ (deshace ultimo commit)
 git reset --hard NumeroCommit (deshace el commit y borra lo ultimo)
 ~~~
-### :yellow_circle: Restaura o deshace cambios realizados
-#### git checkout 
-~~~
-git checkout (Deshace cambios)
-git checkout NombreArchivo (Deshace cambios del archivo)
-git checkout carpeta/Archivo (Deshace cambios del archivo)
-git checkout numeroCommit (Deshace cambios del commit)
-git checkout --. (Deshace todos los archivos eliminados)
-git checkout -f (restaura todos los cambios) 
-git checkout master (restaura a ultimo commit)
-~~~
 #### git rm
 ~~~
 git rm --cached NombreArchivo (Elimina archivos del árbol de trabajo y del índice) 
@@ -124,6 +113,17 @@ git config --global -l (lista de alias)
 ~~~
 ### :large_blue_circle: Agregar archivos
 ![](https://i.ibb.co/HCm5grR/git-add.png)
+### :large_blue_circle: Restaura o deshace cambios realizados
+#### git checkout 
+~~~
+git checkout (Deshace cambios)
+git checkout NombreArchivo (Deshace cambios del archivo)
+git checkout carpeta/Archivo (Deshace cambios del archivo)
+git checkout numeroCommit (Deshace cambios del commit)
+git checkout --. (Restaura todos los archivos eliminados)
+git checkout -f (restaura todos los cambios) 
+git checkout master (restaura a ultimo commit)
+~~~
 ### :large_blue_circle: Crea Rama
 ~~~
 git branch NombreRama (crea rama)
