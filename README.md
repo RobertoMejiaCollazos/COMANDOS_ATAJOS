@@ -1,4 +1,4 @@
-## :orange_square: BÁSICO
+## :orange_square: WORKING DIRECTORY
 ### :orange_circle: Primeros pasos con Git
 #### git version
 ~~~
@@ -21,7 +21,7 @@ git config --list (muestra las configuraciones de git)
 
 
 
-## :yellow_square: INTERMEDIO
+## :yellow_square: STAGING AREA
 ### :yellow_circle: Iniciando proyecto
 #### git init
 ~~~
@@ -49,6 +49,7 @@ git add . (Manda todo a "staging area")
 git add -A (Manda todo a "staging area")
 git add --all (Manda todo a "staging area")
 ~~~
+![](https://i.ibb.co/HCm5grR/git-add.png)
 #### git commit
 ~~~ 
 git commit (Registra los cambios en el repositorio)
@@ -66,15 +67,6 @@ git log --oneline (muestra numero y commit)
 git log --oneline -n 5 (muestra vista 5 ultimos)
 git log --oneline --all (muestra todas las ramas)
 git log --oneline --all --graph --decorate (muestra gráfica)
-~~~
-#### git reset
-~~~
-git reset (Restablece HEAD actual al estado especificado)
-git reset NombreArchivo (excluye archivo)
-git reset HEAD NombreArchivo (deshace cambios en el archivo)
-git reset --soft NumeroCommit (deshace commit)
-git reset --soft HEADˆ (deshace ultimo commit)
-git reset --hard NumeroCommit (deshace el commit y borra lo ultimo)
 ~~~
 #### git rm
 ~~~
@@ -101,7 +93,7 @@ git merge NombreRama (Une la rama master con otra rama)
 ![](https://i.ibb.co/G3GYFVP/manual.png)
 
 
-## :blue_square: AVANZADO
+## :blue_square: GIT DIRECTORY
 ### :large_blue_circle: Personalizar Git
 ~~~
 ~~~
@@ -111,8 +103,6 @@ git config --global alias.ATAJO "COMANDO"
 git config --global -e (registro editable)
 git config --global -l (lista de alias)
 ~~~
-### :large_blue_circle: Agregar archivos
-![](https://i.ibb.co/HCm5grR/git-add.png)
 ### :large_blue_circle: Restaura o deshace cambios realizados
 #### git checkout 
 ~~~
@@ -123,6 +113,15 @@ git checkout numeroCommit (Deshace cambios del commit)
 git checkout --. (Restaura todos los archivos eliminados)
 git checkout -f (restaura todos los cambios) 
 git checkout master (restaura a ultimo commit)
+~~~
+#### git reset
+~~~
+git reset (Restablece HEAD actual al estado especificado)
+git reset NombreArchivo (excluye archivo)
+git reset HEAD NombreArchivo (deshace cambios en el archivo)
+git reset --soft NumeroCommit (deshace commit)
+git reset --soft HEADˆ (deshace ultimo commit)
+git reset --hard NumeroCommit (deshace el commit y borra lo ultimo)
 ~~~
 ### :large_blue_circle: Crea Rama
 ~~~
