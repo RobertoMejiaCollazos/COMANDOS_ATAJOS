@@ -38,11 +38,19 @@ git status -sb (igual "-s -b")
 ~~~
 git add (Agrega el contenido del archivo al indice)
 git add NombreArchivo (Agrega archivo)
-git add . (Manda todo a "staging area")
-git add -A (Manda todo a "staging area")
-git add --all (Manda todo a "staging area")
 ~~~
-![](https://i.ibb.co/HCm5grR/git-add.png)
+~~~
+git add . (Agrega todos los archivos)
+git add -A (Agrega todos los archivos)
+git add --all (Agrega todos los archivos)
+~~~
+~~~
+git add "*.txt" (Agrega todos los txt de TODO el proyecto)
+git add *.txt (Agrega todos los txt en el directorio actual)
+git add <lista de archivos> (Agrega los archivos que listemos)
+git add pdfs/*.pdf (Agrega todos los PDFs dentro de la carpeta PDFs)
+git add pdfs/ (Agrega todos los archivos dentro de la carpeta PDFs)
+~~~
 #### git commit
 ~~~ 
 git commit (Registra los cambios en el repositorio)
