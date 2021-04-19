@@ -1,3 +1,5 @@
+# Estados de Git
+![](https://i.ibb.co/pP4Ccpk/2021-04-19-14-05-59-Git-Cheat-Sheet.png) 
 ## :orange_square: WORKING DIRECTORY
 ### :orange_circle: Primeros pasos con Git
 #### git version
@@ -18,21 +20,11 @@ git config global --user.email "Correo del autor"
 ~~~
 git config --list (muestra las configuraciones de git)
 ~~~
-
-
-
-## :yellow_square: STAGING AREA
-### :yellow_circle: Iniciando proyecto
-#### git init
+#### git config (Alias)
 ~~~
-git init (Crea un repositorio local (.git) o reinicia uno)
-~~~
-#### git status
-~~~
-git status (Muestra el estado del árbol de trabajo)
-git status -s ("s" de silent o silencioso)
-git status -s -b ("silent" y "branch")
-git status -sb (igual "-s -b")
+git config --global alias.ATAJO "COMANDO"
+git config --global -e (registro editable)
+git config --global -l (lista de alias)
 ~~~
 #### git add 
 ~~~
@@ -51,6 +43,39 @@ git add <lista de archivos> (Agrega los archivos que listemos)
 git add pdfs/*.pdf (Agrega todos los PDFs dentro de la carpeta PDFs)
 git add pdfs/ (Agrega todos los archivos dentro de la carpeta PDFs)
 ~~~
+### :orange_circle: Crear un Repositorio
+#### git init
+~~~
+git init (Crea un repositorio local o reinicia uno)
+git init [project name] (Crea un repositorio con nombre)
+~~~
+#### git clone
+~~~
+git clone my_url
+~~~
+
+
+
+
+
+## :yellow_square: STAGING AREA
+### :yellow_circle: Iniciando proyecto
+#### git reset
+~~~
+git reset (Restablece HEAD actual al estado especificado)
+git reset NombreArchivo (excluye archivo)
+git reset HEAD NombreArchivo (deshace cambios en el archivo)
+git reset --soft NumeroCommit (deshace commit)
+git reset --soft HEADˆ (deshace ultimo commit)
+git reset --hard NumeroCommit (deshace el commit y borra lo ultimo)
+~~~
+#### git status
+~~~
+git status (Muestra el estado del árbol de trabajo)
+git status -s ("s" de silent o silencioso)
+git status -s -b ("silent" y "branch")
+git status -sb (igual "-s -b")
+~~~
 #### git commit
 ~~~ 
 git commit (Registra los cambios en el repositorio)
@@ -60,7 +85,6 @@ git commit --amend (Registro de commit)
 git commit --amend -m "NombreCommit" (Renombrar)
 ~~~
 #### git log
-
 ~~~
 git log (Muestran los registros de commits)
 git log --oneline (muestra numero y commit)
@@ -89,16 +113,10 @@ git merge NombreRama (Une la rama master con otra rama)
 ![](https://i.ibb.co/RTbTmxH/merge.jpg)
 
 
+
+
+
 ## :blue_square: GIT DIRECTORY
-### :large_blue_circle: Personalizar Git
-~~~
-~~~
-### :large_blue_circle: Alias
-~~~
-git config --global alias.ATAJO "COMANDO"
-git config --global -e (registro editable)
-git config --global -l (lista de alias)
-~~~
 ### :large_blue_circle: Restaura o deshace cambios realizados
 #### git checkout 
 ~~~
@@ -109,15 +127,6 @@ git checkout numeroCommit (Deshace cambios del commit)
 git checkout --. (Restaura todos los archivos eliminados)
 git checkout -f (restaura todos los cambios) 
 git checkout master (restaura a ultimo commit)
-~~~
-#### git reset
-~~~
-git reset (Restablece HEAD actual al estado especificado)
-git reset NombreArchivo (excluye archivo)
-git reset HEAD NombreArchivo (deshace cambios en el archivo)
-git reset --soft NumeroCommit (deshace commit)
-git reset --soft HEADˆ (deshace ultimo commit)
-git reset --hard NumeroCommit (deshace el commit y borra lo ultimo)
 ~~~
 ### :large_blue_circle: Crea Rama
 ~~~
@@ -135,3 +144,8 @@ git switch NombreRama (Cambia de rama)
 git checkout NombreRama (Cambia de rama)
 git checkout master (Cambia a rama master)
 ~~~
+
+
+
+
+## :green_square: REMOTE DIRECTORY
