@@ -124,6 +124,11 @@ git reset --hard NumeroCommit (deshace el commit y borra lo ultimo)
 git branch NombreRama (crea rama)
 git checkout -b  (crea rama y se traslada)
 ~~~
+### :large_blue_circle: Subir cambios
+~~~
+git push (Sube cambios a repositorio remoto)
+git push  origin <master> (Reemplaza "master" si es a otra rama)
+~~~
 ### :large_blue_circle: Cambiar de Rama
 ~~~
 git switch NombreRama (Cambia de rama)
