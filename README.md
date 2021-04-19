@@ -149,3 +149,14 @@ git checkout master (Cambia a rama master)
 
 
 ## :green_square: REMOTE DIRECTORY
+### :green_circle: Sincronizar
+#### git pull 
+~~~
+git pull (Obtenga cambios desde el origen (sin fusión))
+git pull --rebase (Obtenga cambios de origin y rebase)
+~~~
+#### git fetch
+~~~
+git merge (Une dos o más historias de desarrollo juntas)
+git merge NombreRama (Une la rama master con otra rama)
+~~~
