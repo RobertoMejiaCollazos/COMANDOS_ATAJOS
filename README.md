@@ -34,13 +34,6 @@ git status -s ("s" de silent o silencioso)
 git status -s -b ("silent" y "branch")
 git status -sb (igual "-s -b")
 ~~~
-### :yellow_circle: Los 3 estados de Git
-1. Espacio de trabajo
-2. Area de preparación
-3. Repositorio (carpeta .git)
-
-![](https://i.ibb.co/16LXjLM/3estados.png)
-
 #### git add 
 ~~~
 git add (Agrega el contenido del archivo al indice)
@@ -59,8 +52,7 @@ git commit --amend (Registro de commit)
 git commit --amend -m "NombreCommit" (Renombrar)
 ~~~
 #### git log
-![](https://i.ibb.co/q1GBvC8/log-de-commit.png)
-![](https://i.ibb.co/sWtjDx8/2021-03-31-17-31-55-3-3-Ramas-locales-mp4-Reproductor-multimedia-VLC.png)
+
 ~~~
 git log (Muestran los registros de commits)
 git log --oneline (muestra numero y commit)
@@ -85,12 +77,8 @@ git branch -d NombreRama (elimina rama)
 git merge (Une dos o más historias de desarrollo juntas)
 git merge NombreRama (Une la rama master con otra rama)
 ~~~
-###### Merge forward
-![](https://i.ibb.co/T1J2qg5/fast-forward.png)
-###### Merge Automática
-![](https://i.ibb.co/vQmpRQF/automatica.png)
-###### Merge Manual
-![](https://i.ibb.co/G3GYFVP/manual.png)
+###### Forward, Automática, Manual
+![](https://i.ibb.co/RTbTmxH/merge.jpg)
 
 
 ## :blue_square: GIT DIRECTORY
