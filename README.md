@@ -2,7 +2,7 @@
 ![](https://i.ibb.co/pP4Ccpk/2021-04-19-14-05-59-Git-Cheat-Sheet.png) 
 
 ## :red_square: CONFIGURACIÓN.
-### :red_circle:  Antes de Enpezar a crear commits
+### :red_circle:  Antes de comenzar a crear commits
 
 #### git version
 ~~~
