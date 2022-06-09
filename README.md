@@ -161,3 +161,49 @@ git pull --rebase (Obtenga cambios de origin y rebase)
 git merge (Une dos o más historias de desarrollo juntas)
 git merge NombreRama (Une la rama master con otra rama)
 ~~~
+
+
+## :yellow_square: OTROS COMANDOS
+### :yellow_circle: Más comandos
+
+#### git reflog 
+Mantiene un registro de todo lo que se hace. Te salva la vida.
+~~~
+git reflog (Mantiene un registro de todo)
+~~~
+
+#### git restore
+___Restaura___ archivos de árbol de trabajo.
+
+~~~
+git restore --staget NombreArchivo
+~~~
+
+#### git diff
+___Muestra los cambios entre confirmaciones___, confirmaciones y árbol de trabajo, etc.
+
+~~~
+git diff --stat NombreArchivo (muestra estadistica de cambios)
+git diff --staged (verifica archivos en staged)
+~~~
+
+
+
+#### git tag
+Crea, enumera, elimina o verifica un objeto de etiqueta firmado con GPG
+
+~~~
+git tag NombreTag (crea tag)
+git tag -a VersionTag #commit -m "NombreTag" (crea tag desde commit) 
+git tag (ver tags) 
+git tag -d NombreTag (eliminar tag)
+~~~
+
+### :yellow_circle: Ignorar archivos
+## .gitignore
+Crear archivo ".gitignore" dentro colocar la rutas de los archivos a ignorar y se puedo comentar con "# comentario".
+
+~~~
+carpeta/ignorar.txt (ruta) 
+ignorar_carpeta
+~~~
