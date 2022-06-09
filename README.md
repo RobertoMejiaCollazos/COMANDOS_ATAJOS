@@ -1,7 +1,9 @@
 # Estados de Git
 ![](https://i.ibb.co/pP4Ccpk/2021-04-19-14-05-59-Git-Cheat-Sheet.png) 
 
-### :orange_circle: Primeros pasos con Git
+## :red_square: CONFIGURACIÓN.
+### :red_circle:  Antes de Enpezar a crear commits
+
 #### git version
 ~~~
 git version (ver si esta instalado)
@@ -27,6 +29,7 @@ git config --global -e (registro editable)
 git config --global -l (lista de alias)
 ~~~
 ##  :orange_square: WORKING DIRECTORY
+### :orange_circle: Primeros pasos
 #### git init
 ~~~
 git init (Crea un repositorio local o reinicia uno)
@@ -108,7 +111,7 @@ git merge NombreRama (Une la rama master con otra rama)
 
 
 
-## :blue_square: GIT DIRECTORY
+## :blue_square: LOCAL REPOSITORY
 ### :large_blue_circle: Restaura o deshace cambios realizados
 #### git checkout 
 ~~~
