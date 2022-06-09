@@ -1,6 +1,6 @@
 # Estados de Git
 ![](https://i.ibb.co/pP4Ccpk/2021-04-19-14-05-59-Git-Cheat-Sheet.png) 
-## :orange_square: WORKING DIRECTORY
+
 ### :orange_circle: Primeros pasos con Git
 #### git version
 ~~~
@@ -26,6 +26,12 @@ git config --global alias.ATAJO "COMANDO"
 git config --global -e (registro editable)
 git config --global -l (lista de alias)
 ~~~
+##  :orange_square: WORKING DIRECTORY
+#### git init
+~~~
+git init (Crea un repositorio local o reinicia uno)
+git init [project name] (Crea un repositorio con nombre)
+~~~
 #### git add 
 ~~~
 git add (Agrega el contenido del archivo al indice)
@@ -43,20 +49,6 @@ git add <lista de archivos> (Agrega los archivos que listemos)
 git add pdfs/*.pdf (Agrega todos los PDFs dentro de la carpeta PDFs)
 git add pdfs/ (Agrega todos los archivos dentro de la carpeta PDFs)
 ~~~
-### :orange_circle: Crear un Repositorio
-#### git init
-~~~
-git init (Crea un repositorio local o reinicia uno)
-git init [project name] (Crea un repositorio con nombre)
-~~~
-#### git clone
-~~~
-git clone my_url
-~~~
-
-
-
-
 
 ## :yellow_square: STAGING AREA
 ### :yellow_circle: Iniciando proyecto
@@ -149,6 +141,12 @@ git checkout master (Cambia a rama master)
 
 
 ## :green_square: REMOTE DIRECTORY
+
+### :green_circle: Crear un Repositorio
+#### git clone
+~~~
+git clone my_url
+~~~
 ### :green_circle: Sincronizar
 #### git pull 
 ~~~

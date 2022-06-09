@@ -3,12 +3,8 @@ GitHub es una forja (plataforma de desarrollo colaborativo) para alojar proyecto
 
 El 4 de junio de 2018 Microsoft compró GitHub por la cantidad de 7500 millones de dólares1​2​, al inicio el cambio de propietario generó preocupaciones y la salida de algunos proyectos de este repositorio3​, sin embargo no fueron representativos. GitHub continua siendo la plataforma más importante de colaboración para proyectos Open Source.
 
-## Repositorio Remoto
-
-![](https://i.ibb.co/Lx99GGG/push.png )
-
-#### 1. git clone
-___Clona un repositorio___ en un nuevo directorio.
+### 1. git clone
+Se usa para copiar un repositorio de Git existente en un nuevo directorio local..
 
 ~~~
 git clone https://github.com/user/repositorio.git
