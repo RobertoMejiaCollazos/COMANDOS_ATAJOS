@@ -163,8 +163,8 @@ git merge NombreRama (Une la rama master con otra rama)
 ~~~
 
 
-## :yellow_square: OTROS COMANDOS
-### :yellow_circle: Más comandos
+## :brown_square: OTROS COMANDOS
+### :brown_circle: Más comandos
 
 #### git reflog 
 Mantiene un registro de todo lo que se hace. Te salva la vida.
@@ -199,8 +199,8 @@ git tag (ver tags)
 git tag -d NombreTag (eliminar tag)
 ~~~
 
-### :yellow_circle: Ignorar archivos
-## .gitignore
+### :brown_circle: Ignorar archivos
+#### .gitignore
 Crear archivo ".gitignore" dentro colocar la rutas de los archivos a ignorar y se puedo comentar con "# comentario".
 
 ~~~
